@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <title>TP JS: Gestion des promotions et des élèves</title>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="nav">
+        <ul class="nav navbar-nav">
+          <li><a onclick="printInfo();"><i class="glyphicon glyphicon-home"></i>&nbsp;Accueil</a></li>
+          <li><a onclick="getPromotions();"><i class="glyphicon glyphicon-th-list"></i>&nbsp;Promotions</a></li>
+          <li><a onclick="students.php"><i class="glyphicon glyphicon-th-list"></i>&nbsp;Élèves</a></li>
+          <li><a onclick="createPromotionForm();"><i class="glyphicon glyphicon-plus"></i>&nbsp;Ajouter une promotion</a></li>
+          <li><a onclick="create_student.php"><i class="glyphicon glyphicon-plus"></i>&nbsp;Ajouter un élève</a></li>
+          <li><a onclick="deletePromotionForm();"><i class="glyphicon glyphicon-th-list"></i>&nbsp;Supprimer une promotion</a></li>
+          <li><a onclick=""><i class="glyphicon glyphicon-th-list"></i>&nbsp;Supprimer un élève</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="application">
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="nav">
+        <ul class="nav navbar-nav">
+          <li><a>2017 TP JS/API</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/promotions.js"></script>
+  <script type="text/javascript" src="js/students.js"></script>
+</body>
+</html>
